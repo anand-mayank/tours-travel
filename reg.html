@@ -1,0 +1,264 @@
+<html>
+<head>
+<script type="text/javascript">
+function validation()
+{
+var RE_UID=/^(\w)+$/;
+var RE_PASS=/^(\w)+$/;
+var RE_NAME=/^[A-Za-z]+(\s)+[A-Za-z]+$/;
+var RE_CONTACTNO=/^\d{10,11}$/;
+var RE_EMAIL=/^(\w+[\-\.])*\w+@(\w+\.)+[A-Za-z]+$/;
+var u1=document.getElementById("ud").value;
+var u2=document.getElementById("pd").value;
+var u3=document.getElementById("cp").value;
+var u4=document.getElementById("nam").value;
+var u5=document.getElementById("em").value;
+var u6=document.getElementById("cont").value;
+var u7=document.getElementById("add").value;
+if(u1=="")
+{
+alert("USER ID cannot be left blank");
+return false;
+}
+if(!RE_UID.test(u1))
+{
+alert("USER ID has to be alphanumeric");
+return false;
+}
+if(u2=="")
+{
+alert("Password cannot be left blank");
+return false;
+}
+if(!RE_PASS.test(u2))
+{
+alert("Password has to be alphanumeric");
+return false;
+}
+if(u3!=u2)
+{
+alert("Password not matching");
+return false;
+}
+if(u4=="")
+{
+alert("Name cannot be left blank");
+return false;
+}
+if(!RE_NAME.test(u4))
+{
+alert("Name should have a space and should contain only alphabets");
+return false;
+}
+if(u5=="")
+{
+alert("Email ID cannot be left blank");
+return false;
+}
+if(!RE_EMAIL.test(u5))
+{
+alert("Email should be a valid one !");
+return false;
+}
+
+if(u6=="")
+{
+alert("Contact cannot be left blank");
+return false;
+}
+if(!RE_CONTACTNO.test(u6))
+{
+alert("Contact should be numeric and contain atleast 10 digits");
+return false;
+}
+
+if(u7=="")
+{
+alert("Address cannot be left blank");
+return false;
+}
+//Radio
+var radioSelect=false;
+for(i=0;i<f3.Gender.length;i++)
+{
+if(f3.Gender[i].checked)
+radioSelect=true;
+}
+if(!radioSelect)
+{
+alert("Please select one of the Gender option");
+return false;
+}
+}
+</script>
+<style type="text/css">
+#wrapper
+{
+height:1000px;
+width:1150px;
+background-color: blue;
+background:url("images/signup.jpg");
+background-size: 1197px 950px;
+background-image:no-repeat;
+float:left;
+}
+#side
+{
+height:1050px;
+width:150px;
+background-color:white;
+float:left;
+}
+#header
+{
+height:100px;
+width:1000px;
+background-color:pink;
+float:left;
+}
+#h1
+{
+height:100px;
+width:150px;
+background-color:lightgreen;
+background:url("images/firstlogo.png");
+background-size: 150px 100px;
+background-image:no-repeat;
+float:left;
+}
+#h2
+{
+height:100px;
+width:850px;
+background-color:lightgreen;
+background:url("images/banner2.jpg");
+background-size: 850px 100px;
+background-image:no-repeat;
+float:left;
+}
+#h3{
+height:50px;
+width:1000px;
+background-color:red;
+}
+#stt
+{
+float:right;
+}
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow=hidden;
+background-color:green;
+}
+li
+{
+float:left;
+}
+li a
+{
+display:block;
+color:white;
+text-align:centre;
+margin: 5px 45px;
+padding: 14px 16px;
+text-decoration:none;
+}
+li a:hover
+{
+background-color:darkblue;
+}
+#footer
+{
+
+width:1000px;
+background-color:gray;
+float:left;
+}
+#content
+{
+height:500px;
+width:1000px;
+background-color:white;
+background:url("images/back.jpg");
+background-size: 1000px 850px;
+background-image:no-repeat;
+float:left;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="side"></div>
+<div id="header">
+<div id="h1"></div>
+<div id="h2">
+<div id="stt">
+<a href="adminlog.html">Admin Login</a>
+<a href="userlog.html">User Login</a>
+</div>
+</div>
+</div>
+<div id="h3">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="tours.html">Tours & Packages</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>REGISTRATION FORM</h1>
+<form  name="f3" onsubmit="return validation()" action="php/connect.php" method="post">
+<p><table>
+<tr>
+<td>User ID</td>
+<td><input type="text" name="uid" id="ud">
+</td></tr>
+<tr>
+<td>Password</td>
+<td><input type="Password" name="pwd" id="pd">
+</td></tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="Password" name="cpd" id="cp">
+</td></tr>
+<tr>
+<td>Name</td>
+<td><input type="text" name="name" id="nam">
+</td></tr>
+<tr>
+<td>Email ID</td>
+<td><input type="text" name="mail" id="em">
+</td></tr>
+<tr>
+<td>Contact</td>
+<td><input type="Contact" name="contact" id="cont">
+</td></tr>
+<tr>
+<td>Address</td>
+<td><textarea rows="10" cols="40" name="address" id="add">
+</textarea>
+</td></tr>
+<tr>
+<td>Gender</td>
+<td><input type="radio" name="Gender" value="Male">Male
+<input type="radio" name="Gender" value="Female">Female
+</td></tr>
+<tr>
+<td>
+<input type="Submit" value="Register">
+<input type="Reset" value="Cancel">
+</td></tr>
+</table></form>
+</p>
+</div>
+<div id="footer"><b class="copyright">&copy; Prepared by: </b> Mayank Anand.
+	<br> "In association with S J C institute of technology" </br>
+	<br> <b> Powered by: SJC Forum. Bangalore , India </b></br><b class="copyright">&copy; </b> Trip To Go Pvt-Ltd, All rights reserved</div></b>
+</div>
+</body>
+</html>
