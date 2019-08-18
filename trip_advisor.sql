@@ -41,8 +41,8 @@ CREATE TABLE `admin_reg` (
 --
 
 INSERT INTO `admin_reg` (`admin_id`, `password`, `name`, `mail`, `contact`, `address`, `gender`) VALUES
-('admin1', '123', 'Mayank Anand', 'mayank@outlook.com', '8969669353', 'BD 37 Salt Lake', 'Male'),
-('admin2', '123', 'Atul SIngh', 'atul@yahoo.com', '9874563210', 'EE 75 Salt Lake', 'Male');
+('admin1', '123', 'Mayank Anand', 'mayank@outlook.com', '8912345677', 'BD 37 Salt Lake', 'Male'),
+('admin2', '123', 'Singh', 'singh@yahoo.com', '9874563210', 'EE 75 Salt Lake', 'Male');
 
 -- --------------------------------------------------------
 
@@ -87,9 +87,9 @@ CREATE TABLE `message` (
 --
 
 INSERT INTO `message` (`name`, `mail`, `contact`, `message`) VALUES
-('Mayank Anand', 'mayank@gmail.com', '8969669353', 'Tours & Travels.'),
-('Atul', 'atul@gmail.com', '1234567890', 'Tours & Travels.'),
-('Nainish', 'abc@gmail.com', '9876543210', 'Trip To Go!');
+('Mayank Anand', 'mayank@gmail.com', '8912345677', 'Tours & Travels.'),
+('singh', 'singh@gmail.com', '1234567890', 'Tours & Travels.'),
+('Nano', 'abc@gmail.com', '9876543210', 'Trip To Go!');
 
 -- --------------------------------------------------------
 
