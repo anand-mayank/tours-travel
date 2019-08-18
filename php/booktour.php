@@ -1,0 +1,36 @@
+<?php
+session_start();
+include("connection.php");
+$tid=$_POST["tid"];
+$name=$_POST["name"];
+$num=$_POST["num"];
+$day=$_POST["day"];
+$month=$_POST["month"];
+$year=$_POST["year"];
+$sql="select * from tours";
+$result=mysql_query($sql);
+while($row=mysql_fetch_array($result))
+{
+	if("$row[name]"==$name)
+		$price="$row[price]";
+}
+$total=$num*$price;
+$_SESSION["tid"]=$tid;
+$_SESSION["name"]=$name;
+$_SESSION["num"]=$num;
+$_SESSION["day"]=$day;
+$_SESSION["month"]=$month;
+$_SESSION["year"]=$year;
+$_SESSION["price"]=$year;
+$_SESSION["total"]=$total;
+/*$sql="select tour_id,name from tours where tour_id='$tid' && name='$name'";
+$result=mysql_query($sql);
+if(mysql_num_rows($result))
+	header("location:../bill.php");
+else
+	header("location:../invalid.html");*/
+if($total==0)
+	header("location:../invalid.html");
+else
+	header("location:../bill.php");
+?>
