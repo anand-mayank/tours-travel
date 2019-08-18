@@ -1,6 +1,13 @@
 # Tours&Travels
 Tours and Travel Project , Simple Database Management System Project for Booking of Tickets by User itself and Handled by Admin with Privilege of Adding and Deleting of Tourist places anytime. Easy to use.
 
+# INTRODUCTION
+## About Tourism
+The Tours and Travel Management System is a web based application. The main purpose of “Tours and travels management system” is to provide a convenient way for a customer to book hotels, flight, train and bus for the tour purposes. The objective of this project is to develop a system that automates the processes and activities of a travel agency . In this project, we will make an easier task of searching places and for booking train, flight or bus. In the present system a customer has to approach various agencies to find details of places and to book tickets. This often requires a lot of time and effort. We provide approach skills to critically examine how a tourist visits and its ability to operate in an appropriate way when dealing with the consequences of tourism, locally , regionally and nationally including visitor security and ecological influences. It is tedious for a customer to plan a particular journey and have it executed properly.
+The project “Tours and Travels Management System” is developed to replace the currently existing system, which help in keeping record of customer details of destination as well as payment received. Tourism marketers are faced with a complex environment resulting from unprecedented growth in the tourism industry over the last fifty years. As the phenomenon of tourism has grown, so have the interests of destinations in attracting their share of visitor. Destination choices available to consumers have proliferated.
+Today’s tourism marketers must influence consumer decision making in an increasingly complex and competitive global marketplace. Tourism is a complicated setting involving a diverse group of active stakeholders who each have different interests in the tourism market. For destination stakeholders such as Destination Marketing Organisations (DMOs), accommodation providers, and activity operators to survive in an increasingly competitive environment, it is essential that a consistent approach is used by all tourism stakeholders operating within a single destinationThe importance of segmentation in tourism is widely acknowledged .To date research has assisted us to understand which bases can be used by tourism destinations to effectively for a destination using visitor data. Little research attention has been directed towards understanding how the tourism stakeholders segment their markets. As a result we do not know how tourism stakeholders segment a market for managerial and marketing purposes and whether tourism stakeholder segments mirror the segments defined by DMOs. This case study will contribute to the literature by presenting tourism stakeholder views for one tourism destination. It will identify similarities or discrepancies between the segments defined by the DMO and the segments used by tourism stakeholders for managerial and marketing purposes.
+
+
 # SYSTEM REQUIREMENTS
 ## 1 Hardware Requirements: 
 Processor :Intel core Duo 2.0 GHz or more
@@ -17,6 +24,12 @@ WEB SERVER :Apache with PHP and MySQL
 a)Every user.
 b)Should be comfortable with basics working of computer
 c)Must carry a login ID and Password used for authentication.
+### Login i'd 
+Admin I'd- admin1,admin2
+Password- 123
+User I'd- user1,user2
+Password- 123
+[For user you can Signup and get your own login i'd & pass.]
 ## 4 Tools Used : Xampp
 
 # DESIGN AND ANALYSIS
@@ -137,3 +150,15 @@ Unit test case design was started after source level code had been developed, re
 for correct syntax. A review of design information provides guidance for establishing test cases
 that were likely to uncover errors in each of the categories discussed above. Each test case was
 coupled with a set of expected results
+
+# BIBLIOGRAPHY
+[1] PHP Manual www.php.net/
+[2] https://www.google.com
+[3] http://www.w3schools.com
+[4] http://www.medlife.com
+[5] https://www.google.co.in/
+[6] http://www.stackoverflow.com
+[7] http://www.gist.github.com
+
+# Note :-
+## For any query Contact : mayankgogreen@outlook.com
