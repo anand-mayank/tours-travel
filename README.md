@@ -1,6 +1,23 @@
 # Tours&Travels
 Tours and Travel Project , Simple Database Management System Project for Booking of Tickets by User itself and Handled by Admin with Privilege of Adding and Deleting of Tourist places anytime. Easy to use.
 
+# DEMO
+## Home Page
+![Test Image 1](https://i.imgur.com/GyMvuTg.png)
+## Admin Login Page
+![Test Image 2](https://i.imgur.com/t9EeWEy.png)
+## Admin Page
+![Test Image 3](https://i.imgur.com/FzykVU1.png)
+## Sign Up Page
+![Test Image 4](https://i.imgur.com/eQbW5Wy.png)
+## User Login Page
+![Test Image 5](https://i.imgur.com/kcJHa3P.png)
+## User Page
+![Test Image 6](https://i.imgur.com/K8HDTEt.png)
+## Tour and Package Page
+![Test Image 7](https://i.imgur.com/mIJJkU9.png)
+
+
 # INTRODUCTION
 ## About Tourism
 The Tours and Travel Management System is a web based application. The main purpose of “Tours and travels management system” is to provide a convenient way for a customer to book hotels, flight, train and bus for the tour purposes. The objective of this project is to develop a system that automates the processes and activities of a travel agency . In this project, we will make an easier task of searching places and for booking train, flight or bus. In the present system a customer has to approach various agencies to find details of places and to book tickets. This often requires a lot of time and effort. We provide approach skills to critically examine how a tourist visits and its ability to operate in an appropriate way when dealing with the consequences of tourism, locally , regionally and nationally including visitor security and ecological influences. It is tedious for a customer to plan a particular journey and have it executed properly.
